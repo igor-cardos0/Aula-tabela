@@ -4,49 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula tabela</title>
-    <h1>Criando tabela no HTML</h1>
+    
 
     <style>
-        table, th, td {
-            border: 2px solid brown
+        th, td {
+            border: 1px solid black
         }
+
+        tfoot{
+            background-color: rgb(0, 255, 157);
+        }
+
+        
     </style>
     
 </head>
-<body>
-    <table>
-        <thead>
-            <tr>
-                <th>Nome</th>
-                <th>Idade</th>
-                <th>Informações adicionais</th>
-                <th>Hobe</th>
-                <th>Horário</th>
-                <th>Estudo</th>        
-            </tr>
+       <body>
+             <table>
+                <thead>
+                </thead> 
+                
+                 <tbody>
+                <tr>
+                    <td>Produto </td>
+                    <td>Quantidade</td>
+                    <td>Preço</td>
+                    <td>Black friday</td>       
+                </tr>
 
-        </thead>
+                <tr>
+                    <td>Produto 1</td>
+                    <td>2</td>
+                    <td>5$</td>
+                    <td rowspan="2">Sim</td>
+                </tr>
+
+                <tr>
+                    <td>Produto 2</td>
+                    <td>5</td>
+                    <td>10$</td>
+                   
+                </tr>
+
+                <tr>
+                    <td>Produto 3</td>
+                    <td>3</td>
+                    <td>15$</td>
+                    <td>Não</td>
+                </tr>
+
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total</td>
+                        <td>30$</td>
+                    </tr>
+                    </tfoot>
         
-        <body>
-            <tr>
-                <td>Joâo</td>
-                <td>25</td>
-                <td>Sou estudante</td>
-                <td>Jogar bola</td>
-                <td>12:00</td>
-                <td>Investimentos</td>
-            </tr>
-            <tr>
-                <td>Maria</td>
-                <td>23</td>
-                <td>Programadora</td>
-                <td>Comer</td>
-                <td>15:00</td>
-                <td>Gastronomia
-            </td>        
-        </body>
-        
-       
-    </table>
+                </table>
 </body>
 </html>
